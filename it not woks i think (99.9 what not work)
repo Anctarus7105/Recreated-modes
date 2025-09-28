@@ -19,7 +19,7 @@ firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Shoutout to INK
 coroutine.wrap(function()
 while true do
 wait(100)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PABMAXICHAC/doors-monsters-scripts/refs/heads/main/eyefix"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VeaselGod/CometV4/refs/heads/main/Entities/Eyes.lua"))()
 end
 end)()
 --
