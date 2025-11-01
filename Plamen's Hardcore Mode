@@ -1,0 +1,68 @@
+firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Plamen hardcore mode loading is start...")
+wait(5)
+firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Plamen hardcore mode loaded!")
+
+-- grey eyes
+coroutine.wrap(function()
+while true do
+wait(math.random(80,230))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+loadstring(game:HttpGet("https://pastebin.com/raw/eMDhFFur"))()
+    end
+end)()
+--
+
+-- demon screech
+coroutine.wrap(function()
+while true do
+local sctm = math.random(30,60)
+wait(sctm)
+loadstring(game:HttpGet("SOON"))()
+end
+end)()
+--
+
+-- nightmare rush
+coroutine.wrap(function()
+while true do
+wait(math.random(80,320))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+loadstring(game:HttpGet("https://pastebin.com/raw/sbg7Jnft"))()
+    end
+end)()
+--
+
+-- nightmare ambush
+coroutine.wrap(function()
+while true do
+wait(math.random(80,740))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+loadstring(game:HttpGet("https://pastebin.com/raw/yA4nxtkE"))()
+    end
+end)()
+--
+
+-- nightmare jack
+coroutine.wrap(function()
+while true do
+wait(math.random(80,1000))
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+loadstring(game:HttpGet("https://pastebin.com/raw/1XNHCdzr"))()
+    end
+end)()
+--
+
+-- damage if u take too long to enter next room
+--game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
+--loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/timer_for_damage"))()
+--end)
+
+
+
+end
+
+--
+
+
+-- extra --
+loadstring(game:HttpGet("bruh"))()
