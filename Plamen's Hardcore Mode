@@ -1,68 +1,56 @@
-firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Plamen hardcore mode loading is start...")
+-- Captions --
+firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent,"Plamnen's hardcore mode loading is start...")
 wait(5)
-firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Plamen hardcore mode loaded!")
+firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent,"Loaded succesfully!")
 
--- grey eyes
+-- Entities --
+
+-- Grey Eyes
 coroutine.wrap(function()
-while true do
-wait(math.random(80,230))
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://pastebin.com/raw/eMDhFFur"))()
+    while true do
+        wait(math.random(30,80))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.1)
+loadstring(game:HttpGet("ttps://pastebin.com/raw/eMDhFFur"))()
     end
 end)()
---
 
--- demon screech
+-- Nightmare Rush
 coroutine.wrap(function()
-while true do
-local sctm = math.random(30,60)
-wait(sctm)
-loadstring(game:HttpGet("SOON"))()
-end
-end)()
---
-
--- nightmare rush
-coroutine.wrap(function()
-while true do
-wait(math.random(80,320))
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://pastebin.com/raw/sbg7Jnft"))()
+    while true do
+        wait(math.random(80,120))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(2)
+loadstring(game:HttpGet("https://pastebin.com/raw/uj8zabEu"))()
     end
 end)()
---
 
--- nightmare ambush
+-- Nightmare Ambush 
 coroutine.wrap(function()
-while true do
-wait(math.random(80,740))
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://pastebin.com/raw/yA4nxtkE"))()
+    while true do
+        wait(math.random(20,690))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(2)
+loadstring(game:HttpGet("https://pastebin.com/raw/8EHhDTah"))()
     end
 end)()
---
 
--- nightmare jack
+-- Demon Screech
 coroutine.wrap(function()
-while true do
-wait(math.random(80,1000))
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://pastebin.com/raw/1XNHCdzr"))()
+    while true do
+        wait(math.random(30,60))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastebin.com/raw/Bwy5FNHn"))()
     end
 end)()
---
 
--- damage if u take too long to enter next room
---game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
---loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/timer_for_damage"))()
---end)
-
-
-
-end
-
---
-
-
--- extra --
-loadstring(game:HttpGet("bruh"))()
+-- Nightmare Jack
+coroutine.wrap(function()
+    while true do
+        wait(math.random(20,1500))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0.8)
+loadstring(game:HttpGet("ttps://pastebin.com/raw/1XNHCdzr"))()
+    end
+end)()
