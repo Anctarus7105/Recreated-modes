@@ -1,6 +1,20 @@
+--[[
+    _               _                      _____ _  ___  ____  
+   / \   _ __   ___| |_ __ _ _ __ _   _ __|___  / |/ _ \| ___| 
+  / _ \ | '_ \ / __| __/ _` | '__| | | / __| / /| | | | |___ \ 
+ / ___ \| | | | (__| || (_| | |  | |_| \__ \/ / | | |_| |___) |
+/_/   \_\_| |_|\___|\__\__,_|_|   \__,_|___/_/  |_|\___/|____/ 
+
+-- Join my discord server for new releases , scripts , sneak peaks!
+-- also you can too post scripts in "Other scripts" and forums.
+-- dm for bugs find or questions.
+--]]
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/Sprint"))()
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Crazy Mode is ACTIVATED! (recreated by Anctarus7105)",true)
-wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Made by MuhammadGames,Volta and Anctarus7105",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Crazy Mode is ACTIVATED!",true)
+wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Made by MuhammadGames and Volta",true)
+game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Remade by Anctarus#7105!",true)
 
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
@@ -12,6 +26,8 @@ achievementGiver({
     Reason = "You executed the HardCore script.",
     Image = "rbxassetid://17735553738"
 })
+end
+end)
 
 -- Depth
 coroutine.wrap(function()
@@ -19,7 +35,7 @@ coroutine.wrap(function()
         wait(80)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet('https://pastefy.app/BItVDA0u/raw'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/DepthCrazyMode"))()
     end
 end)()
 
@@ -29,7 +45,7 @@ coroutine.wrap(function()
         wait(320)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet('https://pastefy.app/YMa2CPBC/raw'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/SmilerV2"))()
     end
 end)()
 
@@ -39,7 +55,7 @@ coroutine.wrap(function()
         wait(180)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Nightmare%20Rush%20Spawn'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Voor-Pr00/Rush-mod/refs/heads/main/Script"))()
     end
 end)()
 
@@ -49,7 +65,7 @@ coroutine.wrap(function()
         wait(300)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Nightmare%20Ambush%20Spawn'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/NightMareAmbush"))()
     end
 end)()
 
@@ -59,7 +75,7 @@ coroutine.wrap(function()
         wait(100)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Kotyara19k-Doorsspawner/Random-files/main/TraumaSoucreSpawner'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/TraumaV2"))()
     end
 end)()
 
@@ -69,7 +85,7 @@ coroutine.wrap(function()
         wait(200)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(/)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Vhs!Sans%20Spawn'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Vhs!Sans"))()
     end
 end)()
 
@@ -79,6 +95,6 @@ coroutine.wrap(function()
         wait(200)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet('https://pastefy.app/1xxpTxo3/raw'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/A-200"))()
     end
 end)()
