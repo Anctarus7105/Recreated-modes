@@ -84,7 +84,7 @@ coroutine.wrap(function()
     while true do
         wait(200)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-        wait(/)
+        wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Vhs!Sans"))()
     end
 end)()
