@@ -1,0 +1,87 @@
+--[[
+    _               _                      _____ _  ___  ____  
+   / \   _ __   ___| |_ __ _ _ __ _   _ __|___  / |/ _ \| ___| 
+  / _ \ | '_ \ / __| __/ _` | '__| | | / __| / /| | | | |___ \ 
+ / ___ \| | | | (__| || (_| | |  | |_| \__ \/ / | | |_| |___) |
+/_/   \_\_| |_|\___|\__\__,_|_|   \__,_|___/_/  |_|\___/|____/ 
+
+-- Join my discord server for new scripts , releases , sneak peaks!
+-- https://discord.gg/2x5NGVya
+-- Credits: TheendisnearDonotfear , Oof , Thanhtv68
+--]]
+
+-- My Furry Version Of Ambush And Rush
+-- Custom Rush
+local RushMoving = game.Workspace:WaitForChild("RushMoving")
+
+if RushMoving = then
+
+local RushMoving = game.Workspace:FindFirstChild("RushMoving")
+
+if RushMoving = then
+
+game.Workspace["RushMoving"].RushNew.Attachment.ParticleEmitter.Texture = LoadCustomAsset("https://github.com/TheendisnearDonotfear/Others/blob/main/mauzymice.png?raw=true")
+game.Workspace["RushMoving"].RushNew.PlaySound.SoundId = "rbxassetid://4702564143"
+game.Workspace["RushMoving"].RushNew.PlaySound.PlaybackSpeed = 1
+game.Workspace["RushMoving"].RushNew.PlaySound.Volume = 2
+game.Workspace["RushMoving"].RushNew.Footsteps.SoundId = "rbxassetid://4702564143"
+game.Workspace["RushMoving"].RushNew.Footsteps.PlaybackSpeed = 1
+game.Workspace["RushMoving"].RushNew.Footsteps.Volume = 3
+
+game.Workspace["RushMoving"].RushNew.Attachment.BlackTrail.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.new(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.305882, Color3.new(0, 0, 0)),
+            ColorSequenceKeypoint.new(0.305882, Color3.new(0, 0, 0)),
+            ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
+        })
+
+end
+
+-- Fury Ambush
+local AmbushMoving = game.Workspace:WaitForChild("AmbushMoving")
+
+if AmbushMoving = then
+
+local AmbushMoving = game.Workspace:FindFirstChild("AmbushMoving")
+
+if AmbushMoving = then
+
+game.Workspace["AmbushMoving"].AmbushNew.Attachment.ParticleEmitter.Texture = LoadCustomAsset("https://github.com/TheendisnearDonotfear/FearmodeDoors/blob/main/Ambush_Furry.png?raw=true")
+game.Workspace["AmbushMoving"].AmbushNew.PlaySound.SoundId = "rbxassetid://4702564143"
+game.Workspace["AmbushMoving"].AmbushNew.PlaySound.PlaybackSpeed = 1
+game.Workspace["AmbushMoving"].AmbushNew.PlaySound.Volume = 2
+game.Workspace["AmbushMoving"].AmbushNew.Footsteps.SoundId = "rbxassetid://4702564143"
+game.Workspace["AmbushMoving"].AmbushNew.Footsteps.PlaybackSpeed = 1
+game.Workspace["AmbushMoving"].AmbushNew.Footsteps.Volume = 3
+        })
+
+end
+
+-- Furry Ambush
+local AmbushMoving = game.Workspace:WaitForChild("AmbushMoving")
+
+if AmbushMoving = then
+
+local AmbushMoving = game.Workspace:FindFirstChild("AmbushMoving")
+
+if AmbushMoving = then
+
+game.Workspace["AmbushMoving"].AmbushNew.Attachment.ParticleEmitter.Texture = LoadCustomAsset("https://github.com/TheendisnearDonotfear/FearmodeDoors/blob/main/Ambush_Furry.png?raw=true")
+game.Workspace["AmbushMoving"].AmbushNew.PlaySound.SoundId = "rbxassetid://4702564143"
+game.Workspace["AmbushMoving"].AmbushNew.PlaySound.PlaybackSpeed = 1
+game.Workspace["AmbushMoving"].AmbushNew.PlaySound.Volume = 2
+game.Workspace["AmbushMoving"].AmbushNew.Footsteps.SoundId = "rbxassetid://4702564143"
+game.Workspace["AmbushMoving"].AmbushNew.Footsteps.PlaybackSpeed = 1
+game.Workspace["AmbushMoving"].AmbushNew.Footsteps.Volume = 3
+        })
+
+end
+
+-- Oof's Furry Mode
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Thanhtv68/DoorsMode/refs/heads/main/But%20Furry"))()
+
+--[[
+Furry Rush Chance = 85%
+Furry Ambush Chance = 55%
+Furry Entity Chance = ?%
+--]]
