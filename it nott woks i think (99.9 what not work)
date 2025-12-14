@@ -1,115 +1,12 @@
-if game.ReplicatedStorage.GameData.LatestRoom.Value <= 0 then
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[Oof's Error Detector]: You must execute this script in room 1 or higher.", Color = Color3.fromRGB( 255,0,0 ), Font = nothingactually, FontSize = Enum.FontSize.Size24 } )
-firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "You must execute this script in room 1.")
-end
----- first message, error detection ----
+--[[
+    _               _                      _____ _  ___  ____  
+   / \   _ __   ___| |_ __ _ _ __ _   _ __|___  / |/ _ \| ___| 
+  / _ \ | '_ \ / __| __/ _` | '__| | | / __| / /| | | | |___ \ 
+ / ___ \| | | | (__| || (_| | |  | |_| \__ \/ / | | |_| |___) |
+/_/   \_\_| |_|\___|\__\__,_|_|   \__,_|___/_/  |_|\___/|____/ 
 
-if game.ReplicatedStorage.GameData.LatestRoom.Value >= 1 then
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[Oof's Impossible Mode]: Script succesfully executed.", Color = Color3.fromRGB( 0,255,0 ), Font = nothingactually, FontSize = Enum.FontSize.Size24 } )
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "SCRIPT VERSION: MULTIPLAYER (v1.4)", Color = Color3.fromRGB( 0,255,0 ), Font = nothingactually, FontSize = Enum.FontSize.Size24 } )
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "Good Luck.", Color = Color3.fromRGB( 255,255,255 ), Font = nothingactually, FontSize = Enum.FontSize.Size24 } )
-firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Oof's impossible mode script succesfully loaded.")
---
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "Script synced according to the room.", Color = Color3.fromRGB( 255,255,255 ), Font = nothingactually, FontSize = Enum.FontSize.Size24 } )
-firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Script sync'd according to the room.")
-wait(2.5)
-firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Shoutout to INK!CHARA#0001 for finishing the game with this difficulty.")
--- eyes
-coroutine.wrap(function()
-while true do
-wait(100)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VeaselGod/CometV4/refs/heads/main/Entities/Eyes.lua"))()
-end
-end)()
---
+-- Join my discord server for new scripts , releases , sneak peaks!
+-- https://discord.gg/2x5NGVya
+--]]
 
--- screech
-coroutine.wrap(function()
-while true do
-local sctm = math.random(30,60)
-wait(sctm)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PABMAXICHAC/doors-monsters-scripts/refs/heads/main/spawnScreech"))()
-end
-end)()
---
-
--- smiler
-coroutine.wrap(function()
-while true do
-wait(200)
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://pastebin.com/C6YS89vA"))()
-end
-end)()
---
-
--- dimensional eye
-coroutine.wrap(function()
-while true do
-wait(300)
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Dimensional%20Eyes"))()
-end
-end)()
---
-
--- wh1t3
-coroutine.wrap(function()
-while true do
-wait(500)
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-loadstring(game:HttpGet("https://pastebin.com/tKUTZXGQ"))()
-end
-end)()
---
-
--- Silence
-coroutine.wrap(function()
-while true do
-wait(379)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PABMAXICHAC/doors-monsters-scripts/refs/heads/main/shhcrux"))()
-end
-end)()
---
-
--- Common Sense
-
-coroutine.wrap(function()
-
-game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
-
-if game.ReplicatedStorage.GameData.LatestRoom.Value == 50 then
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/common%20sense"))()
-
-end
-
-end)
-
-end)()
--- customroom
-coroutine.wrap(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/wDDm2xH2"))()
-end)()
---
--- redroom
---game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
---loadstring(game:HttpGet("https://pastebin.com/raw/UVKaJuyq"))()
---end)
---
-
--- damage if u take too long to enter next room
---game.ReplicatedStorage.GameData.LatestRoom.Changed:Connect(function()
---loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/timer_for_damage"))()
---end)
-
-
-
-end
-
---
-
-
--- extra --
-loadstring(game:HttpGet("https://pastebin.com/raw/gkvFviLW"))()
+loadstring((function(b64) local chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'; local result = ''; local val = 0; local valb = -8; for i = 1, #b64 do local c = b64:sub(i,i); if c ~= '=' then local pos = chars:find(c) - 1; val = val * 64 + pos; valb = valb + 6; if valb >= 0 then result = result .. string.char(math.floor(val / 2^valb) % 256); val = val % 2^valb; valb = valb - 8; end; end; end; return result; end)("LS0gQ2hhdCBNZXNzYWdlcwpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1Zvb3JQaGFsZTAxMi9Gb2dyb29tL3JlZnMvaGVhZHMvbWFpbi9DaGF0dHMiKSkoKQoKLS0gQ3VzdG9tIFBhaW50aW5ncwpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1Zvb3ItUHIwMC9EcmVkYS9yZWZzL2hlYWRzL21haW4vUGFpbnQiKSkoKQoKLS0gQ3VzdG9tIFJvb20KbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbmN0YXJ1czcxMDUvQ3VzdG9tLVJvb21zL3JlZnMvaGVhZHMvbWFpbi9QQUJNQVhJQ0hBQydzJTIwY3VzdG9tJTIwcm9vbSIpKSgpCgotLSBDcnVjaWZpeCBTcGF3bgpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FuY3RhcnVzNzEwNS9Ub29scy9yZWZzL2hlYWRzL21haW4vQ3J1Y2lmaXhTcGF3bmVyLmx1YSIpKSgpCgotLSBDb21tb24gU2Vuc2UKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Wb29yUGhhbGUwMTIvQ29tbWVuLXNlbmNlLS9yZWZzL2hlYWRzL21haW4vQ29tbWVuJTIwc2VuY2VlIikpKCkKCi0tIE5pZ2h0bWFyZSBSdXNoCmxvYWRzdHJpbmcoZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vVm9vci1QcjAwL1J1c2gtbW9kL3JlZnMvaGVhZHMvbWFpbi9TY3JpcHQiKSkoKQoKCnJlcXVpcmUoZ2FtZS5QbGF5ZXJzLkxvY2FsUGxheWVyLlBsYXllckd1aS5NYWluVUkuSW5pdGlhdG9yLk1haW5fR2FtZSkuY2FwdGlvbigiT29mJ3MgaW1wb3NzaWJsZSBtb2RlIHNjcmlwdCBzdWNjZXNzZnVsbHkgbG9hZGVkLiIsdHJ1ZSkKZ2FtZS5SZXBsaWNhdGVkU3RvcmFnZS5HYW1lRGF0YS5MYXRlc3RSb29tLkNoYW5nZWQ6V2FpdCgpCndhaXQoMC4xKQpsb2NhbCBwbHIgPSBnYW1lLlBsYXllcnMuTG9jYWxQbGF5ZXIKaWYgbm90IHBsci5QbGF5ZXJHdWk6RmluZEZpcnN0Q2hpbGQoIkdsb2JhbHVpIikgdGhlbgpsb2NhbCBoaSA9IHBsci5QbGF5ZXJHdWkuR2xvYmFsVUk6Q2xvbmUoKQpoaS5QYXJlbnQgPSBwbHIuUGxheWVyR3VpCmhpLk5hbWUgPSAiR2xvYmFsdWkiCmVuZApyZXF1aXJlKGdhbWUuUGxheWVycy5Mb2NhbFBsYXllci5QbGF5ZXJHdWkuTWFpblVJLkluaXRpYXRvci5NYWluX0dhbWUpLmNhcHRpb24oIlNjcmlwdCBzeW5jZWQgYWNjb3JkaW5nIHRvIHRoZSByb29tLiIsdHJ1ZSl3YWl0KDMpCnJlcXVpcmUoZ2FtZS5QbGF5ZXJzLkxvY2FsUGxheWVyLlBsYXllckd1aS5NYWluVUkuSW5pdGlhdG9yLk1haW5fR2FtZSkuY2FwdGlvbigiRml4ZWQgZW50aXRpZXMgYnkgVm9vclBoYWxlMDEyICYgTm93aHl3aGF0cyAmIHZ1aXZ1aXZpdTIgJiBBbmN0YXJ1cyM3MTA1LiIsdHJ1ZSl3YWl0KDMpCnJlcXVpcmUoZ2FtZS5QbGF5ZXJzLkxvY2FsUGxheWVyLlBsYXllckd1aS5NYWluVUkuSW5pdGlhdG9yLk1haW5fR2FtZSkuY2FwdGlvbigiR29vZCBsdWNrISIsdHJ1ZSkKCi0tIFNjcmVlY2gKdGFzay5zcGF3bihmdW5jdGlvbigpCndoaWxlIHRydWUgZG8gd2FpdCg4NSkKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9WZWFzZWxHb2QvQ29tZXRWNC9yZWZzL2hlYWRzL21haW4vRW50aXRpZXMvU2NyZWVjaC5sdWEiKSkoKQplbmQKZW5kKQoKLS0gRXllcwpjb3JvdXRpbmUud3JhcChmdW5jdGlvbigpCiAgICB3aGlsZSB0cnVlIGRvCiAgICAgICAgd2FpdChtYXRoLnJhbmRvbSgxMDAsIDE0MCkpCiAgICAgICAgZ2FtZS5SZXBsaWNhdGVkU3RvcmFnZS5HYW1lRGF0YS5MYXRlc3RSb29tLkNoYW5nZWQ6V2FpdCgpCiAgICAgICAgd2FpdCgxKQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FuY3RhcnVzNzEwNS9FbnRpdGllcy1TcGF3bnMvcmVmcy9oZWFkcy9tYWluL0V5ZXMlMjBJbXBvc3NpYmxlJTIwTW9kZSIpKSgpCmVuZAplbmQpKCkKCi0tIEJsaW5rCmNvcm91dGluZS53cmFwKGZ1bmN0aW9uKCkKICAgIHdoaWxlIHRydWUgZG8KICAgICAgICB3YWl0KDIzMCkKICAgICAgICBnYW1lLlJlcGxpY2F0ZWRTdG9yYWdlLkdhbWVEYXRhLkxhdGVzdFJvb20uQ2hhbmdlZDpXYWl0KCkKICAgICAgICB3YWl0KDApCiAgICAgICAgbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9QQUJNQVhJQ0hBQy9kb29ycy1tb25zdGVycy1zY3JpcHRzL21haW4vYmxpbmtjcnV4IikpKCkKICAgIGVuZAplbmQpKCkKCi0tIFNpbGVuY2UKY29yb3V0aW5lLndyYXAoZnVuY3Rpb24oKQogICAgd2hpbGUgdHJ1ZSBkbyAKICAgICAgICB3YWl0KDM5OSkKICAgICAgICAgZ2FtZS5SZXBsaWNhdGVkU3RvcmFnZS5HYW1lRGF0YS5MYXRlc3RSb29tLkNoYW5nZWQ6V2FpdCgpCmxvYWRzdHJpbmcoZ2FtZTpIdHRwR2V0KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vVm9vclBoYWxlMDEyL1NpbGVuY2UvcmVmcy9oZWFkcy9tYWluL1NpbGVuY2VfT2JmdXNjYXRlIikpKCkKZW5kCmVuZCkoKQoKLS0gSHVuZ2VyCmNvcm91dGluZS53cmFwKGZ1bmN0aW9uKCkKICAgIHdoaWxlIHRydWUgZG8KICAgICAgICB3YWl0KDcwMCkKICAgICAgICBnYW1lLlJlcGxpY2F0ZWRTdG9yYWdlLkdhbWVEYXRhLkxhdGVzdFJvb20uQ2hhbmdlZDpXYWl0KCkKICAgICAgIHdhaXQoMCkKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Wb29yUGhhbGUwMTIvQW1pbGVyL3JlZnMvaGVhZHMvbWFpbi9DcnV4SCIpKSgpCmVuZAplbmQpKCkKCi0tIERpbWVuc2lvbmFsIEV5ZQpjb3JvdXRpbmUud3JhcChmdW5jdGlvbigpCiAgICB3aGlsZSB0cnVlIGRvCiAgICAgICAgd2FpdCg1OTApCiAgICAgICAgZ2FtZS5SZXBsaWNhdGVkU3RvcmFnZS5HYW1lRGF0YS5MYXRlc3RSb29tLkNoYW5nZWQ6V2FpdCgpCiAgICAgICAgIHdhaXQoMCkKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Wb29yUGhhbGUwMTIvRXllL3JlZnMvaGVhZHMvbWFpbi9EZW1lbmlzb25hbF9FeWUiKSkoKQplbmQKZW5kKSgpCgotLSBTbWlsZXkKY29yb3V0aW5lLndyYXAoZnVuY3Rpb24oKQogICAgd2hpbGUgdHJ1ZSBkbwpsb2NhbCBjaGFuY2UgPSBtYXRoLnJhbmRvbSgxLCAyKQogICAgICAgIHdhaXQoMTAwMCkKICAgICAgIGlmIGNoYW5jZSA9PSAxIHRoZW4KbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9BbmN0YXJ1czcxMDUvRW50aXRpZXMtU3Bhd25zL3JlZnMvaGVhZHMvbWFpbi9TbWlsZXkiKSkoKQplbmQKZW5kKSgpCgotLSBXaDF0Mwpjb3JvdXRpbmUud3JhcChmdW5jdGlvbigpCiAgICB3aGlsZSB0cnVlIGRvIAogICAgICAgIHdhaXQobWF0aC5yYW5kb20oMjk5LCAzMTApKQogICAgICAgICBnYW1lLlJlcGxpY2F0ZWRTdG9yYWdlLkdhbWVEYXRhLkxhdGVzdFJvb20uQ2hhbmdlZDpXYWl0KCkKICAgICAgICB3YWl0KDEuNSkKbG9hZHN0cmluZyhnYW1lOkh0dHBHZXQoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Wb29yUGhhbGUwMTIvc3Bhd25ubi9yZWZzL2hlYWRzL21haW4vV2gxdDNGaXgiKSkoKQplbmQKZW5kKSgpCgotLSBTbWlsZXIKY29yb3V0aW5lLndyYXAoZnVuY3Rpb24oKQogICAgd2hpbGUgdHJ1ZSBkbyAKICAgICAgICB3YWl0KDI3MCkKICAgICAgICAgZ2FtZS5SZXBsaWNhdGVkU3RvcmFnZS5HYW1lRGF0YS5MYXRlc3RSb29tLkNoYW5nZWQ6V2FpdCgpCiAgICAgICAgd2FpdCgwKQpsb2Fkc3RyaW5nKGdhbWU6SHR0cEdldCgiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FuY3RhcnVzNzEwNS9FbnRpdGllcy1TcGF3bnMvcmVmcy9oZWFkcy9tYWluL1NtaWxlclYyIikpKCkKZW5kCmVuZCkoKQ=="))()
