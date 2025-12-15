@@ -1,0 +1,31 @@
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Script Has Been Executed!",true)
+
+-- Badge
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Random-Files/refs/heads/main/PlamenHardcoreBadge"))()
+
+-- Demon Screech
+task.spawn(function()
+while true do wait(65)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Demon%20Screech"))()
+end
+end)
+
+-- Grey Eyes
+coroutine.wrap(function()
+    while true do
+        wait(math.random(100, 140))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Grey%20Eyes"))()
+end
+end)()
+
+-- Nightmare Rush
+coroutine.wrap(function()
+    while true do
+        wait(130)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+         wait(1.6)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Nightmare%20Rush"))()
+end
+end)()
