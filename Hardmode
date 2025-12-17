@@ -1,0 +1,37 @@
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Made By Exploit Remade By Anctarus#7105",true)
+
+-- Sprint
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Doors-Guest-Scripts/Doors-Hubs/refs/heads/main/Hardcore%20Sprint%20System%20(PC%20and%20Mobile%20Adaptation).lua.txt"))()
+
+-- Chat Message
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Random-Files/refs/heads/main/HarderModeMessages"))()
+
+-- A-60
+coroutine.wrap(function()
+    while true do
+        wait(math.random(100, 100))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/A-60HarderMode"))()
+end
+end)()
+
+-- Nerd
+coroutine.wrap(function()
+    while true do
+        wait(math.random(100, 115))
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/NerdSpawner.lua"))()
+end
+end)()
+
+-- Speedster
+coroutine.wrap(function()
+    while true do
+        wait(130)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+         wait(math.random(100, 125))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/TraumaV2"))()
+end
+end)()
