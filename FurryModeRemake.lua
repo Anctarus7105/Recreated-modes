@@ -19,7 +19,7 @@ coroutine.wrap(function()
         wait(math.random(80, 110))
          game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(1.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Voor-Pr00/spawnnn/refs/heads/main/WH1T3_Obfuscate"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Furry%20Ambush"))()
 end
 end)()
 
@@ -29,7 +29,7 @@ coroutine.wrap(function()
         wait(math.random(100, 130))
          game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Voor-Pr00/spawnnn/refs/heads/main/SMILER_Obfuscate"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Anctarus7105/Entities-Spawns/refs/heads/main/Furry%20Rush"))()
 end
 end)()
 
